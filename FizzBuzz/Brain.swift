@@ -13,4 +13,8 @@ class Brain {
     func isDivisibleByThree(number: Int) -> Bool {
         return (number % 3 == 0) ? true : false
     }
+    
+    func isDivisibleByFive(number: Int) -> Bool {
+        return (number % 5 == 0) ? true : false
+    }
 }
