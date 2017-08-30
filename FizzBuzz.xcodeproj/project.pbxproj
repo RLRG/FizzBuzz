@@ -15,6 +15,7 @@
 		37DD3B541F5718EA00065466 /* FizzBuzzUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37DD3B531F5718EA00065466 /* FizzBuzzUITests.swift */; };
 		37DD3B621F5719D200065466 /* BrainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37DD3B611F5719D200065466 /* BrainTests.swift */; };
 		37DD3B641F571BDF00065466 /* Brain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37DD3B631F571BDF00065466 /* Brain.swift */; };
+		37DD3B661F572C2700065466 /* GameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37DD3B651F572C2700065466 /* GameTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		37DD3B551F5718EA00065466 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		37DD3B611F5719D200065466 /* BrainTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrainTests.swift; sourceTree = "<group>"; };
 		37DD3B631F571BDF00065466 /* Brain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Brain.swift; sourceTree = "<group>"; };
+		37DD3B651F572C2700065466 /* GameTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 			children = (
 				37DD3B4A1F5718EA00065466 /* Info.plist */,
 				37DD3B611F5719D200065466 /* BrainTests.swift */,
+				37DD3B651F572C2700065466 /* GameTests.swift */,
 			);
 			path = FizzBuzzTests;
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				37DD3B621F5719D200065466 /* BrainTests.swift in Sources */,
+				37DD3B661F572C2700065466 /* GameTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -524,6 +528,7 @@
 				37DD3B5A1F5718EA00065466 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		37DD3B5B1F5718EA00065466 /* Build configuration list for PBXNativeTarget "FizzBuzzTests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +537,7 @@
 				37DD3B5D1F5718EA00065466 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		37DD3B5E1F5718EA00065466 /* Build configuration list for PBXNativeTarget "FizzBuzzUITests" */ = {
 			isa = XCConfigurationList;
@@ -540,6 +546,7 @@
 				37DD3B601F5718EA00065466 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
