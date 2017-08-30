@@ -11,14 +11,18 @@ import Foundation
 class Brain {
     
     func isDivisibleByThree(number: Int) -> Bool {
-        return (number % 3 == 0) ? true : false
+        return isDivisibleBy(divisor: 3, number: number)
     }
     
     func isDivisibleByFive(number: Int) -> Bool {
-        return (number % 5 == 0) ? true : false
+        return isDivisibleBy(divisor: 5, number: number)
     }
     
     func isDivisibleByFifteen(number: Int) -> Bool {
-        return (number % 15 == 0) ? true : false
+        return isDivisibleBy(divisor: 15, number: number)
+    }
+    
+    func isDivisibleBy(divisor div: Int, number num: Int) -> Bool {
+        return num % div == 0
     }
 }
