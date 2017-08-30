@@ -34,6 +34,11 @@ class Brain {
         if (isDivisibleByFive(number: num)) {
             result += "Buzz"
         }
-        return result
+        if (result != "") {
+            return result
+        } else {
+            return String(num)
+        }
+        
     }
 }
