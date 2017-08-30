@@ -7,8 +7,11 @@
 //
 
 import XCTest
+@testable import FizzBuzz
 
 class GameTests: XCTestCase {
+    
+    let game = Game()
     
     override func setUp() {
         super.setUp()
@@ -18,4 +21,7 @@ class GameTests: XCTestCase {
         super.tearDown()
     }
     
+    func testGameStartsAtZero() {
+        XCTAssertTrue(game.score == 0)
+    }
 }
