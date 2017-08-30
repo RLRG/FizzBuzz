@@ -25,4 +25,15 @@ class Brain {
     func isDivisibleBy(divisor div: Int, number num: Int) -> Bool {
         return num % div == 0
     }
+    
+    func check(number num: Int) -> String {
+        var result = ""
+        if (isDivisibleByThree(number: num)) {
+            result += "Fizz"
+        }
+        if (isDivisibleByFive(number: num)) {
+            result += "Buzz"
+        }
+        return result
+    }
 }
