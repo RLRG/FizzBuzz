@@ -10,9 +10,22 @@ import Foundation
 
 class Game {
     
-    var score:Int
+    var score : Int
+    let brain : Brain
     
     init() {
-        score = 0
+        self.score = 0
+        brain = Brain()
+    }
+    
+    func play(move mv: String = "") -> Bool {
+        let result = brain.check(number: score + 1)
+        
+        if result == mv {
+            score += 1
+            return true
+        } else {
+            return false
+        }
     }
 }
