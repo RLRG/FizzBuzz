@@ -35,7 +35,7 @@ class ViewController: UIViewController {
         gameScore = checkedGame.score
     }
 
-    func play(move mv: String) {
+    func play(move mv: Move) {
         guard let unwrappedGame = game else {
             print("Game is nil!")
             return
@@ -47,13 +47,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func numberTapped(_ sender: Any) {
-        guard let unwrappedScore = gameScore else {
-            print("Game score is nil")
-            return
-        }
-        
-        let nextScore = unwrappedScore + 1
-        play(move: "\(nextScore)")
+        play(move: .number)
     }
     
 }
