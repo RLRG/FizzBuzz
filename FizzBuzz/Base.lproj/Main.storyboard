@@ -37,6 +37,7 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LrL-Yu-GKZ">
                                                 <rect key="frame" x="0.0" y="0.0" width="135" height="135"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="numberButton"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="135" id="sdG-XW-YN3"/>
                                                 </constraints>
@@ -44,6 +45,9 @@
                                                 <state key="normal" title="0" backgroundImage="white_button_border">
                                                     <color key="titleColor" red="0.82352941180000006" green="0.92549019610000005" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="numberTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="X8L-zA-azJ"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d5C-xu-2vL">
                                                 <rect key="frame" x="143" y="0.0" width="135" height="135"/>
@@ -87,6 +91,9 @@
                             <constraint firstItem="UTN-1H-Lxa" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="h1M-nM-QHa"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="scoreLabel" destination="LrL-Yu-GKZ" id="JwT-DN-PbW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

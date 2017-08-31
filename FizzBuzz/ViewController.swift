@@ -10,12 +10,29 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var scoreLabel: UIButton!
+    
     var game: Game?
-    var gameScore: Int?
+    var gameScore: Int? {
+        didSet {
+            guard let unwrappedScore = gameScore else {
+                print("gameScore is nil")
+                return
+            }
+            scoreLabel.setTitle("\(unwrappedScore)", for: .normal)
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         game = Game()
+        
+        guard let checkedGame = game else {
+            print("Game is nil")
+            return
+        }
+        
+        gameScore = checkedGame.score
     }
 
     func play(move mv: String) {
@@ -24,8 +41,20 @@ class ViewController: UIViewController {
             return
         }
         let response = unwrappedGame.play(move: mv)
-        gameScore = response.score
+        if (response.right) {
+            gameScore = response.score
+        }
     }
 
+    @IBAction func numberTapped(_ sender: Any) {
+        guard let unwrappedScore = gameScore else {
+            print("Game score is nil")
+            return
+        }
+        
+        let nextScore = unwrappedScore + 1
+        play(move: "\(nextScore)")
+    }
+    
 }
 
