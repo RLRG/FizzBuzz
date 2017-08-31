@@ -28,9 +28,13 @@ class ViewControllerUnitTests: XCTestCase {
         super.tearDown()
     }
 
-    // Dummy test to check that the setUp was right
+    // MARK: - Dummy tests to check that the setUp was right
     func test() {
         XCTAssertTrue(true)
+    }
+    
+    func testHasAGame() {
+        XCTAssertNotNil(viewController.game)
     }
     
     func testMove1IncrementsScore() {
@@ -46,9 +50,8 @@ class ViewControllerUnitTests: XCTestCase {
         XCTAssertEqual(newScore, 2)
     }
     
-    func testHasAGame() {
-        XCTAssertNotNil(viewController.game)
-    }
+    
+    // MARK: - Button tests
     
     func testMoveFizzIncrementScore() {
         viewController.game?.score = 2

@@ -51,7 +51,11 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d5C-xu-2vL">
                                                 <rect key="frame" x="143" y="0.0" width="135" height="135"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="fizzButton"/>
                                                 <state key="normal" image="champagne" backgroundImage="white_button_border"/>
+                                                <connections>
+                                                    <action selector="numberTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pAs-3h-xKz"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -60,11 +64,19 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RLe-Cz-t2H">
                                                 <rect key="frame" x="0.0" y="0.0" width="135" height="134.5"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="buzzButton"/>
                                                 <state key="normal" image="lightning" backgroundImage="white_button_border"/>
+                                                <connections>
+                                                    <action selector="numberTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hF5-Ys-2dH"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="syH-yC-wjj">
                                                 <rect key="frame" x="143" y="0.0" width="135" height="134.5"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="fizzBuzzButton"/>
                                                 <state key="normal" image="space" backgroundImage="white_button_border"/>
+                                                <connections>
+                                                    <action selector="numberTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yaj-Uv-tpi"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -92,6 +104,9 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="buzzButton" destination="RLe-Cz-t2H" id="bq1-JP-Nl2"/>
+                        <outlet property="fizzButton" destination="d5C-xu-2vL" id="Jgx-ld-ahs"/>
+                        <outlet property="fizzBuzzButton" destination="syH-yC-wjj" id="SpS-5w-cH4"/>
                         <outlet property="scoreLabel" destination="LrL-Yu-GKZ" id="JwT-DN-PbW"/>
                     </connections>
                 </viewController>
